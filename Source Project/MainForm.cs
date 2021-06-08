@@ -104,7 +104,8 @@ namespace TwitchClipDownloader
       this.chk_useChannel.Checked = Settings.Default.cusec;
       this.chk_useGame.Checked = Settings.Default.cuseg;
       this.checkVersionAsync();
-    }
+      this.Icon = Icon.ExtractAssociatedIcon(AppDomain.CurrentDomain.FriendlyName);
+        }
 
     private void saveLocals()
     {
